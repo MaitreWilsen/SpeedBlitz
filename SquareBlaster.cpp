@@ -12,11 +12,14 @@ Reference : https://www.sfml-dev.org/tutorials/2.5/
 int main() {
 
 	
-	std::string other = "Wanna play again ?";
+	std::string other = "I AM A GAMER I HAVE LOTS OF LIVES \n --------------------------------------------------";
+	copyQuote word;
 
 	Response response1, response2(other);
 	std::cout << response1.getresponse() << "\n";
 	std::cout << response2.getresponse() << "\n";
+
+
 
 	//Init Game engine
 	Game game;
