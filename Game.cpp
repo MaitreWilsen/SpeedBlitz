@@ -11,8 +11,6 @@ void Game::initWindow(){
 	// Creating a Window
 	// Create a window ; videomode for sizing the window ((Width,Height), name of the window)
 	this->window = new sf::RenderWindow(sf::VideoMode(900, 600), "Square Blaster");
-
-
 }
 
 //Constructors / Destructors
@@ -70,9 +68,9 @@ void Game::render(){ // Visualizing all the positon putting pixels on the screen
 		system("pause");
 	}
 
-
 	sf::Text text;
 	text.setFont(font);
+	text.setFillColor(sf::Color::Black);
 	text.setCharacterSize(30);
 	text.setStyle(sf::Text::Bold);
 	text.setString("GAME OVER " );
@@ -81,5 +79,4 @@ void Game::render(){ // Visualizing all the positon putting pixels on the screen
 	this->window->clear(sf::Color::Blue); // Clear the screen With a blue color
 	this->window->draw(text);
 	this->window->display();
-
 }
