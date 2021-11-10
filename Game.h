@@ -41,12 +41,11 @@ class Response {
 private:
 	std::string name;
 
-
 public:   
 								
 	// 1. your name
 	Response() {
-		std::string word = "Did you have a fun time";
+		std::string word = "I DON'T NEED TO GET A LIFE";
 		name = word;
 	}
 
@@ -58,6 +57,18 @@ public:
 	std::string getresponse() {
 		return name;
 	}
+
+};
+
+// Inheritance 
+class mainQuote {
+public:
+	mainQuote() {
+		std::cout << "REAL GAMERS NEVER DIE THEY RESPAWN!\n";
+	}
+};
+
+class copyQuote : public mainQuote {
 
 };
 
