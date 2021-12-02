@@ -20,6 +20,8 @@ int main() {
 	std::cout << response2.getresponse() << "\n";
 
 
+	//Init random
+	std::srand(static_cast<unsigned>(time(NULL)));
 
 	//Init Game engine
 	Game game;
