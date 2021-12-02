@@ -1,5 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
+#include <iostream>
+#include <vector>
+#include <ctime> //Random
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
@@ -15,9 +18,25 @@ private:
 	sf::VideoMode videoMode;
 	sf::Event event;
 
+	//Mouse Position
+	sf::Vector2i mouse_postion_window;
+
+	//Game Logic
+	int points;
+	float enemySpawnTimer;
+	float enemySpawnTimerMax;
+	int maxEnemies;
+
+
+
+	//Game Objects
+	std::vector<sf::RectangleShape> enemy; // This will contain the enemy square keep track of how many their are
+	sf::RectangleShape enemy;
+
 	//Private Functions
 	void initVariables();
 	void initWindow();
+	void initEnemies();
 
 public:
 	// Constructors / Destructors
@@ -30,8 +49,12 @@ public:
 	const bool running() const; // While the window is running
 
 	//Functions
+	void spawnEnemy();
 	void pollEvents();
+	void update_mouse_positions();
+	void updateEnemies();
 	void update();
+	void renderEnemies();
 	void render();
 
 };
