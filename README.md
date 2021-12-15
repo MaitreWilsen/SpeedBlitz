@@ -8,13 +8,13 @@ Reference : https://www.sfml-dev.org/tutorials/2.5/  <br />
             https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/object-oriented-programming-in-cpp <br />
 
 
--> Window
--> Game Class
--> Game Loop 
--> Update & Rendering
--> Create Shapes
--> Move Shapes
--> Positions
--> Getting mouse position and inputs
--> Getting keyboard inputs
--> Removing shapes
+-> Window <br />
+-> Game Class <br />
+-> Game Loop  <br />
+-> Update & Rendering <br />
+-> Create Shapes <br />
+-> Move Shapes <br />
+-> Positions <br />
+-> Getting mouse position and inputs <br />
+-> Getting keyboard inputs <br />
+-> Removing shapes <br />
