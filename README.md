@@ -9,5 +9,7 @@ Reference : https://www.sfml-dev.org/tutorials/2.5/  <br />
             
 # Documentation
 
+https://maitrewilsen.github.io/SpeedBlitz/index.html
+
 
 	
