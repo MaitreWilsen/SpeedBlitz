@@ -1,6 +1,16 @@
+/** @file   Game.cpp.
+*   @brief  The heart of the program where everything from rendering the windows of the game to enemies is created.
+*   @author Wilsen R. Maitre.
+*   @bugs No Known Bugs.
+ */
+
 #include "Game.h"
 
-//Private functions
+ //Private functions
+ /** @brief  function that hold private variabled from classes
+ *
+ */
+
 void Game::initVariables()
 {
 	this->window = nullptr;
@@ -15,10 +25,11 @@ void Game::initVariables()
 	this->mouseHeld = false;
 }
 
+/** @brief   Create a window ; videomode for sizing the window ((Height,Width), name of the window)
+*
+*/
 void Game::initWindow()
 {
-	// Creating a Window
-	// Create a window ; videomode for sizing the window ((Height,Width), name of the window)
 
 	this->videoMode.height = 600;
 	this->videoMode.width = 900;
@@ -28,6 +39,9 @@ void Game::initWindow()
 	this->window->setFramerateLimit(60);
 }
 
+/** @brief custom font that will show in the sfml windows for the game
+*
+*/
 void Game::initFonts()
 {
 	if (!font.loadFromFile("Fonts/ka1.ttf")) {
@@ -36,6 +50,9 @@ void Game::initFonts()
 	}
 }
 
+/** @brief the defaults size and color based on the custom font
+*
+*/
 void Game::initText()
 {
 	this->uiText.setFont(this->font);
@@ -44,15 +61,22 @@ void Game::initText()
 	this->uiText.setString("NONE");
 }
 
+/** @brief the falling enemies position, size and color
+*
+*/
+
 void Game::initEnemies()
 {
 	this->enemy.setPosition(10.f, 10.f);
 	this->enemy.setSize(sf::Vector2f(100.f, 100.f));
 	this->enemy.setFillColor(sf::Color::Cyan);
-	
+
 }
 
-//Constructors / Destructors
+
+/** @brief Constructors / Destructors
+*
+*/
 Game::Game()
 {
 	this->initVariables();
@@ -78,17 +102,18 @@ const bool Game::getEndGame() const
 	return this->endGame;
 }
 
-//Functions
+/** @brief  spawn falling object onto the screen
+*   @param  Spawns enemies and sets their types and colors. Spawns them at random positions.
+*		   -Sets a random type (diff).
+*		   -Sets a random position.
+*		   -Sets a random color.
+*		   -Adds enemy to the vector.
+*	@return void
+*/
+
+
 void Game::spawnEnemy()
 {
-	/*
-		@return void
-		Spawns enemies and sets their types and colors. Spawns them at random positions.
-		-Sets a random type (diff).
-		-Sets a random position.
-		-Sets a random color.
-		-Adds enemy to the vector.
-	*/
 
 	this->enemy.setPosition(
 		static_cast<float>(rand() % static_cast<int>(this->window->getSize().x - this->enemy.getSize().x)),
@@ -266,10 +291,12 @@ void Game::update()
 		this->endGame = true;
 }
 
+// LO7
 void Game::renderText(sf::RenderTarget& target)
 {
 	target.draw(this->uiText);
 }
+// LO7
 
 void Game::renderEnemies(sf::RenderTarget& target)
 {
@@ -280,18 +307,19 @@ void Game::renderEnemies(sf::RenderTarget& target)
 	}
 }
 
-void Game::render() // Visualizing all the positon putting pixels on the screen
+// LO3
+/** @brief  Visualizing all the positon putting pixels on the screen
+*   @param  - clear old frame
+*		    - render objects
+*		    - display frame in window
+*		    Renders the game objects.
+*   @return void
+*/
 
+void Game::render()
 {
-	/**
-		@return void
-		- clear old frame
-		- render objects
-		- display frame in window
-		Renders the game objects.
-	*/
 
-	this->window->clear(); 
+	this->window->clear();
 	//Draw game objects
 
 	this->renderEnemies(*this->window);
