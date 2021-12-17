@@ -7,5 +7,7 @@ Desc      : SpeedBlitz is the best solution to quick reflexes and more. Fast dec
 Reference : https://www.sfml-dev.org/tutorials/2.5/  <br />
             https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/object-oriented-programming-in-cpp <br />
             
+# Documentation
+
 
 	
