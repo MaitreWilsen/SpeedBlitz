@@ -1,5 +1,12 @@
-#ifndef GAME_H
-#define GAME_H
+/** @file   Game.h.
+*   @brief  The header file where all the prototype and classes are stored for proper coding practice and readability.
+*   @author Wilsen R. Maitre.
+*   @bugs No Known Bugs.
+ */
+
+
+#pragma once
+
 
 #include<iostream>
 #include<vector>
@@ -12,12 +19,14 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 
-/*
-	Class that acts as the game engine.
-	Wrapper class.
-*/
+ /*
+	 Class that acts as the game engine.
+	 Wrapper class.
+ */
 
+ // LO1
 class Game {
+	// LO6
 private:
 	//Variables Window
 	sf::RenderWindow* window; // Delete the window when you want
@@ -53,6 +62,7 @@ private:
 	void initFonts();
 	void initText();
 	void initEnemies();
+	// LO6
 
 public:
 	//Constructors / Destructors
@@ -79,20 +89,27 @@ public:
 
 
 // Overload a constructor
+// LO1
+// LO1a
+
 class Response {
+	// LO6
 
 private:
 	std::string name;
+	// LO6
 
 public:
 
 	// 1. your name
+	// LO1b
 	Response() {
 		std::string word = "Time trouble ... Reduces us all to pure reflex and reaction, tactical play.";
 		name = word;
 	}
 
 	// 2. default response
+	// LO1b
 	Response(std::string other) {
 		name = other;
 	}
@@ -104,16 +121,22 @@ public:
 };
 
 // Inheritance 
+// LO1
+// LO2
+// Base class
+
 class mainQuote {
+	// LO6
+
 public:
 	mainQuote() {
 		std::cout << "The worst enemy of the strategist is the clock.\n";
 	}
 };
 
+// LO1
+// Sub class inheriting from Base Class(mainQuote)
 class copyQuote : public mainQuote {
 	// Class copyQuote will utilize the public function mainQuote
 
 };
-
-#endif // !GAME_H
