@@ -1,0 +1,26 @@
+var NAVTREEINDEX0 =
+{
+"_game_8h.html":[1,0,0,0,0,0,0,0],
+"_game_8h_source.html":[1,0,0,0,0,0,0,0],
+"_speed_blitz_8cpp.html":[1,0,0,0,0,0,0,1],
+"annotated.html":[0,0],
+"class_game.html":[0,0,1],
+"class_game.html#a0634553da4f33ed2c5a6f2cae6607ea5":[0,0,1,1],
+"class_game.html#a15ddd769261d923827a3cdf41499c843":[0,0,1,0],
+"class_game.html#af5b91f47d6d75bad7f244f39dbd247d4":[0,0,1,2],
+"class_response.html":[0,0,3],
+"classcopy_quote.html":[0,0,0],
+"classes.html":[0,1],
+"classmain_quote.html":[0,0,2],
+"dir_0081d1a37fa93ceb719e8d03ae0dff26.html":[1,0,0,0],
+"dir_7aa3a610ed28e1d898e1225e8b1b26a6.html":[1,0,0,0,0,0],
+"dir_cdfe29afd57137ff594b5cf16f06aa11.html":[1,0,0,0,0,0,0],
+"dir_d522931ffa1371640980b621734a4381.html":[1,0,0],
+"dir_fb6fa9a8217bb6629751ff71d4387fb7.html":[1,0,0,0,0],
+"files.html":[1,0],
+"functions.html":[0,3,0],
+"functions_func.html":[0,3,1],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[]
+};
