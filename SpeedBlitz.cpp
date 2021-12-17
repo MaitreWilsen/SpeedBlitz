@@ -1,12 +1,9 @@
-/*
-File      : SpeedBlitz.cpp
-Class     : COP 3003
-Author    : Wilsen R. Maitre
-Desc      : SpeedBlitz is the best solution to quick reflexes and more. Fast decisions typically mean more mistakes—this     
-            efficient training regimen induces a general speeding of perceptual reaction times without decreased performance
-			accuracy.The user will try to destroy falling targets and the system will keep track of his/her score and health.
-Reference : https://www.sfml-dev.org/tutorials/2.5/ 
-            https://www.codecademy.com/learn/c-plus-plus-for-programmers/modules/object-oriented-programming-in-cpp
+/** @file   SpeedBlitz.cpp.
+*   @brief  SpeedBlitz is the best solution to quick reflexes and more. Fast decisions typically mean more mistakes—this
+*           efficient training regimen induces a general speeding of perceptual reaction times without decreased performance
+*			accuracy.The user will try to destroy falling targets and the system will keep track of his/her score and health.
+*  @author Wilsen R. Maitre.
+*  @bugs No Known Bugs.
  */
 
 #include <iostream>
@@ -17,7 +14,7 @@ Reference : https://www.sfml-dev.org/tutorials/2.5/
 int main()
 {
 
-	
+
 
 	std::string other = "Emotion and instinct cloud our strategic vision when there is no time for proper evaluation. \n- Author: Garry Kasparov \n --------------------------------------------------";
 	copyQuote word;
